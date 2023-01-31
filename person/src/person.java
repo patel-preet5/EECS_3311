@@ -16,12 +16,24 @@ public class person{
 
     }
 
-    public void setContactInfo(String newInfo){
-        contactInfo = newInfo;
-        
-    }
 
-    public int getUserId(){
+
+    // getters to get info about the person 
+    public int getUserId(){// get the userID
         return userId;
     }
+
+    public String getName(){// get the name of person
+        return name;
+    }
+
+    public String getContactInfo(){// get  the contact info of the person
+        return contactInfo;
+    }
+
+    // Only setter just in case a person changes there contact info
+    public void setContactInfo(String newInfo){// to change the contact info to the new contact info 
+        contactInfo = newInfo;  
+    }
+
 }
