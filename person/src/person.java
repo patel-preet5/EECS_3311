@@ -1,10 +1,10 @@
-public class person{
+public class Person{
 
     private int userId;
     private String name; 
     private String contactInfo;
 
-    public void newPerson(){
+    public void newPerson(int perUserId, String perName, String perContactInfo){
         
     }
 
