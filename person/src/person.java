@@ -1,11 +1,26 @@
 public class Person{
 
-    private int userId;
+    private int userID;
     private String name; 
     private String contactInfo;
 
-    public void newPerson(int perUserId, String perName, String perContactInfo){
-        
+    // defult constuctor 
+    public Person(){
+        this.userID = 0;
+        this.name = NULL;
+        this.contactInfo = NULL;
+    }
+
+    // Constuctor
+    public Person(int userID, String name, String contactInfo){
+        this.userID = userID;
+        this.name = name;
+        this.contactInfo = contactInfo;
+    }
+
+    // Create a new object of person 
+    public void newPerson(int perUserID, String perName, String perContactInfo){
+        Person newPerson = new Person(perUserID, perName, perContactInfo);
     }
 
     public void newTeam(){
@@ -19,21 +34,21 @@ public class Person{
 
 
     // getters to get info about the person 
-    public int getUserId(){// get the userID
-        return userId;
+    public int getUserID(){// get the userID
+        return this.userID;
     }
 
     public String getName(){// get the name of person
-        return name;
+        return this.name;
     }
 
     public String getContactInfo(){// get  the contact info of the person
-        return contactInfo;
+        return this.contactInfo;
     }
 
     // Only setter just in case a person changes there contact info
     public void setContactInfo(String newInfo){// to change the contact info to the new contact info 
-        contactInfo = newInfo;  
+        this.contactInfo = newInfo;  
     }
 
 }
