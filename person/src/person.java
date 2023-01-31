@@ -14,4 +14,9 @@ public class person{
     public void assignToTeam(){
 
     }
+
+    public void setContactInfo(String newInfo){
+        contactInfo = newInfo;
+        
+    }
 }
