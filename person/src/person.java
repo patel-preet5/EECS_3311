@@ -1,4 +1,5 @@
 public class person{
+
     private int userId;
     private String name; 
     private String contactInfo;
@@ -18,5 +19,9 @@ public class person{
     public void setContactInfo(String newInfo){
         contactInfo = newInfo;
         
+    }
+
+    public int getUserId(){
+        return userId;
     }
 }
