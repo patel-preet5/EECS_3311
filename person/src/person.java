@@ -24,11 +24,11 @@ public class Person{
     }
 
     public void newTeam(){
-
+        //Team newTeam = new Team();
     }
 
     public void assignToTeam(){
-
+        // need a helper function that will take a person oject then addeds it to the team.
     }
 
 
